@@ -1,13 +1,24 @@
+---
+import '@picocss/pico'
+---
+
 <!doctype html>
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='generator' content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<nav>
+			<a href='/'>Home</a>
+			<a href='/svelte'>Svelte</a>
+			<a href='/react'>React</a>
+			<a href='/solid'>Solid</a>
+			<a href='/vue'>Vue</a>
+		</nav>
 		<slot />
 	</body>
 </html>
